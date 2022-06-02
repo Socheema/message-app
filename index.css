@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #286da8;
+    color: #131c61;
+}
+
+.wrapper{
+    background-color: #3dcaf5;
+    display: flex;
+    width:650px;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px; 
+    flex-direction: column; 
+    position: relative;
+    height: 350px; 
+}
+button{
+    display: block;
+    font-size: 1.7rem;
+    margin: 1rem auto;
+    padding: 0.3rem .8rem;
+    color:#1a267d ;
+    background-color: #286da8;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+input[type=text]{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: 2px solid #286da8;
+    outline: none;
+    width: 20rem;
+    align-self: center;
+}
+
+button:hover{
+    background-color: white;
+}
+
+input[type=text]:focus{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.sentMessage{
+    margin: .5rem 0;
+    color:#2c082e;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.feedback{
+    color: red;
+    margin: 0.25rem;
+    display: none;
+    padding: 0.25rem;
+}
+
+.delete{
+    position: absolute;
+    height: 2.7rem;
+    width: 2.7rem;
+    bottom: .1rem;
+    left:25.5rem;
+    cursor: pointer;
+    display: none;
+} 
+
+
+.image-col{
+    position: relative;
+}
+
+@media screen and (max-width:400px){
+    .delete{
+        left: 17rem;
+    }
+    .wrapper{
+        width: min-content;
+    }
+    
+}
+
+ @media screen and (min-width:405px){
+    .delete{
+        left: 21rem;
+    }
+    
+} 
+ @media screen and (min-width:529px){
+    .delete{
+        left: 25.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
