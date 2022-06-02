@@ -56,7 +56,7 @@ deleteBtn.addEventListener("click", function () {
 
 message.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
-    messageReceived.innerHTML += message.value;
+    messageReceived.innerHTML = message.value;
     message.value = "";
   }
 });
